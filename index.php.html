@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+
+    <style media="screen">
+        h1{
+            text-decoration: underline;
+        }
+        /*table{
+            margin: 1rem auto;
+            width: 80vw;
+        }
+        thead{
+            background-color: #333;
+            color: #FFF;
+        }
+        td{
+            padding: 1rem;
+        }
+        tr{
+            border: 1px;
+        }
+        */
+        body{
+            background-color: grey;
+            margin: 100px;
+        }
+        .page{
+            background-color: rgb(240, 243, 245);
+            border-radius: 25px;
+            border: 5px solid #3396e4;
+        }
+        
+        h1{
+            text-align: center;
+        }
+
+        form{
+            margin-top: 50px;
+            margin-bottom: 50px;
+           margin-left: 300px;
+    
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="page">
+    <h1>Enregistrement des Produits et Catégories</h1>
+    <hr>
+    
+    <form action="traitement.php" method="POST" enctype="application/x-www-form-urlencoded">  <!--- [entype="applic...."] : est l'encodage par défaut des formulaire qui n'ont pas des champs de type file(fichier)-->
+        <div>
+            <input type="text" name="produit" placeholder="entrez le produit..."><br><br>
+            <!-----------------------
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                  <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Séléctionne la Catégorie...</option>
+                    <option value="1">agro-alimentaire</option>
+                    <option value="2">électroménagère</option>
+                    <option value="3">bureautique</option>
+                  </select>
+            </div>
+            -->
+
+            <input type="text" name="categorie" placeholder="entrez la catégorie..."><br><br>
+            <input type="tinyint" name="prixunitaire" placeholder="le prix unitaire..."><br><br>
+            <input type="mediumint" name="montant" placeholder="le montant..."><br><br>
+            <input type="date" name="date" placeholder="la date...">
+            <input type="submit" value="Enregistrer">
+            <hr>
+        </div>
+    </form>
+
+    <!---- 
+        <table>
+        <h1>Facture</h1>
+        <hr>
+        <thead>
+            <td>Prix Unitaire</td>
+            <td>Montant</td>
+            <td>Date</td>
+        </thead>
+        <tr>
+            <td></td>
+             <td></td
+            <td></td>  
+        </tr>
+        </table>
+    --->
+</div>
+</body>
+</html>
